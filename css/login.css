@@ -1,0 +1,58 @@
+#Main {
+	width: 475px;
+	margin: 0 auto;
+	background-color: rgb(239, 239, 239);
+	border-radius: 5px;
+	overflow: auto;
+	text-align: center;
+}
+
+#tabs > input {
+	display: none;
+}
+
+#tabs > label {
+	display: block;
+	float: left;
+	width: 50%;
+	
+	color: black;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	padding: 20px 0;
+	margin-bottom: 20px; /* NEEDS TO BE THE SAME VALUE AS THE PADDING IN 'SECTION'*/
+	border-bottom: 3px solid rgb(48, 145, 230);
+}
+
+#tabs > label:hover {
+	color: rgb(48, 145, 230);
+}
+
+#tabs [id^="tab"]:checked + label {
+	color: white;
+	background-color: rgb(48, 145, 230);
+}
+
+#tabs > section {
+	display: none;
+	padding: 20px;
+}
+
+#tabs > section > p {
+	color: red;
+	padding: 5px;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+	display: block;
+}
+
+#tabs > section > form > input {
+	width: 80%;
+	margin: 5px;
+	padding: 10px;
+	font-size: 16px;
+}

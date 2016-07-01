@@ -1,0 +1,126 @@
+/* TABLE */
+
+table {
+	margin: 0 auto;
+	border-spacing: 15px;
+}
+
+/* CAPTION */
+
+table caption {
+	padding-top: 20px;
+	font-size: 32px;
+}
+
+table td {
+	width: 200px;
+	background-color: rgb(221, 221, 221);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+table td > img {
+	height: auto;
+	width: 180px; /* EXPANDS THE IMAGE TO FIT THE BOX WIDTH */
+	margin: 0 auto;
+}
+
+table td p {
+	padding: 5px;
+	border-radius: 3px;
+	margin: 5px 0;
+}
+
+/* DETAILS */
+
+table td p.title {
+	text-align: center;
+	height: 40px; /* THIS MAKES SURE THE TEXT DOESNT PUSH ELEMENTS IN DIFFERENT WAYS */
+	margin: 0;
+	padding: 0;
+}
+
+table td p.desc {
+	text-align: center;
+	height: 100px;  /* SET THIS TO THE MAX DESCRIPTION HIEGHT */
+}
+
+table td p.price {
+	background-color: rgb(48, 145, 230);
+	color: white;
+	text-align: center;
+}
+
+table td p.inStock {
+	background-color: green;
+	color: white;
+	text-align: center;
+}
+
+table td p.outStock {
+	background-color: red;
+	color: white;
+	text-align: center;
+}
+
+table td form {
+	padding: 0;
+	margin: 0;
+}
+
+table td form > input.order {
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0;
+	border-radius: 3px;
+	background-color: green;
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	border: none;
+}
+
+table td form.amount {
+	border-radius: 3px;
+	width: 100%;
+}
+
+table td form.amount >  input.quantity {
+	margin: 5px 0;
+	height: 25px;
+	width: 50px;
+	text-align: center;
+	border: none;
+}
+
+table td form.amount > input.update {
+	padding: 5px;
+	margin: 5px;
+	border-radius: 3px;
+	background-color: rgb(48, 145, 230);
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	border: none;
+}
+
+table td form.amount > input.remove {
+	float: right;
+	padding: 5px;
+	margin: 5px 0;
+	border-radius: 3px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	vertical-align: bottom;
+	border: none;
+}
+
+/*TURNS OFF THE UP AND DOWN ARROW FOR THE NUMBER INPUT FIELDS*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

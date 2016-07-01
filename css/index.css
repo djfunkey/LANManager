@@ -1,0 +1,62 @@
+/* MAIN */
+
+#Main {
+	background-color: transparent !important; /* !IMPORTANT JUST MAKES SURE IT OVERRIDES THE COLOUR IN GLOBAL FOR 'MAIN' */
+	width: 900px;
+}
+
+/* POST */
+
+#Post {
+	margin-bottom: 10px;
+	border-radius: 5px;
+	height: auto;
+	min-height: 200px;
+	overflow: auto;
+	position: relative;
+	background-color: white;
+}
+
+/* USER */
+
+#User {
+	width: 100px;
+
+	height: 100%;
+	padding: 0 20px;
+	margin-right: 10px;
+	position: absolute;
+	float: left;
+	background-color: rgb(48, 145, 230);
+	text-align: center;
+	color: white;
+}
+
+#User > img {
+	width: 100px;
+	margin: 10px 0;
+}
+
+#User > p.name {
+	margin-bottom: 10px;
+}
+
+#User > p.date {
+	color: red;
+}
+
+/* CONTENT */
+
+#Content {
+	margin: 10px 0 0 150px;
+	text-align: left;
+	position: relative;
+}
+
+#Content > p.title {
+	font-size: 30px;
+}
+
+#Content > p.body {
+	margin: 10px 0;
+}
